@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cats Vs Dogs | Image Classification</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
+</head>
+
+<body>
+        <h1>Cats Vs Dogs</h1>
+        <h3> Image Classification Using Convolutional Neural Networks</h3>
+        <br><br><br><br><br><br>
+        <form action='/predict' method="post" enctype="multipart/form-data">
+            <input type="file" name="image" id='file' />
+            <input type='submit' name='submit' id='submit' value='Go!'/>
+        </form>
+</body>
+</html>

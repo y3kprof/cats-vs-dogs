@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cats Vs Dogs | Image Classification</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
+</head>
+
+<body>
+    <h1> Cats Vs Dogs</h1>
+    <h3> Image Classification Using Convolutional Neural Networks</h3>
+    <br><br><br><br><br><br>
+    <!--<form action="/predict" method="post" enctype="multipart/form-data" >
+        <input type="file" name="image"><br><br>
+        <input type="submit" value="Predict" class="btn btn-primary">
+    </form>-->
+    {% if results[0][0]>0.5 %}
+    <p>It's a cat with confidence {{ results[0][0] }}</p>
+    {% else %}
+    <p>It's a dog with confidence {{ results[0][1] }}</p>
+    {% endif %}
+    <div><a href='{{ url_for('index') }}'>Go back</a></div>
+    
+</body>
+</html>

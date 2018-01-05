@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+h1{
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-variant:small-caps;
+    color: aliceblue;
+}
+h3{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-variant:small-caps;
+    color: aliceblue;
+}
+p{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: aliceblue;
+}
+
+div{
+    text-align: center;
+}
+
+a{
+    font-family: 'Comfortaa', cursive;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+form { 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+input[type='file'] {
+    color:transparent;    
+}
+
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #434343;
+    background-image:linear-gradient(#434343, #282828);
+}
