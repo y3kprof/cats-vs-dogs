@@ -12,6 +12,7 @@ from keras.models import Model
 from keras.layers import Dense, GlobalAveragePooling2D
 
 app = Flask(__name__)
+app.config.from_object(__name__)
 
 UPLOAD_FOLDER = os.path.basename('uploads')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -85,4 +86,5 @@ if __name__ == '__main__':
     # load trained weights, these weights are trained by running model.py
     model.load_weights(MODEL_WEIGHTS)
     # run the app
-    app.run(debug=False)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)  
