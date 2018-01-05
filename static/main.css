@@ -9,7 +9,6 @@ h1{
 h3{
     text-align: center;
     font-family: 'Comfortaa', cursive;
-    font-variant:small-caps;
     color: aliceblue;
 }
 p{
@@ -24,7 +23,7 @@ div{
 
 a{
     font-family: 'Comfortaa', cursive;
-    color: aliceblue;
+    color: rgb(152, 184, 212);
     text-decoration: none;
 }
 
